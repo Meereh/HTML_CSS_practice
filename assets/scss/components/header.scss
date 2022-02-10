@@ -1,0 +1,97 @@
+#header{
+    position: relative;
+    background-color: #fff;
+    z-index: 2000;
+ 
+    .header-top-nav{
+        position: relative;
+        height: 160px;
+        background-color: #fff;
+        border-bottom: 1px solid #e4e8eb;
+
+        .header-group {
+            position: relative;
+            width: 1130px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0 30px;
+            
+            .logo-area {
+                position: relative;
+                height: 100%;
+  
+
+                .txt{
+                    position: absolute;
+                    top: 50%;
+                    left: -9px;
+                    margin-top: -32px;
+                    display: inline-block;
+                    color: #03c75a;
+                }
+            }
+
+            .search-area{
+                position: absolute;
+                top: 12px;
+                right: 27px;
+
+                .nav-top{
+                    float: left;
+                    font-size: 11px;
+                    color: #404040;
+
+                    .txt{
+                        padding: 0 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .search-input{
+                position: absolute;
+                top: 50%;
+                left: 268px;
+                margin-top: -28px;
+
+            }
+    
+        }
+    }
+
+
+    
+
+    .header-bottom-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+ 
+ 
+
+        .bottom-nav .txt{
+            position: relative;
+            display: inline-block;
+            padding: 0 4px;
+            color: #03c75a;
+            font-weight: bold;
+        }
+
+        .bottom-nav1 .txt{
+            position: relative;
+            display: inline-block;
+            padding: 0 4px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .nav-weather{
+            position: relative;
+            display: inline-block;
+            padding: 0 4px;
+            color: #000;
+        }
+    }
+}
+
+    

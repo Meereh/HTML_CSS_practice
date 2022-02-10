@@ -1,0 +1,274 @@
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    //overflow: hidden;  
+    overflow-x: scroll;  
+}
+
+@function naver_color($color, $opacity){
+    $color: rgba($color, $opacity);
+    @return $color;
+}
+
+#header{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+    .header-top-nav {
+        height: 140px;
+    }
+
+    .service-area{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 30px;
+
+        .txt{
+            padding: 0 5px;
+            display: inline-block;
+            font-size: small;
+            color: #000;
+        }
+    }
+
+    .search-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .logo{
+            padding: 0 20px 0 0;
+
+            .txt{
+                display: inline-block;
+                color: #03c75a;
+            }
+        }
+
+
+        .search{
+            line-height: 23px;
+            width: 300px;
+        }
+
+        .searchbtn{
+            padding: 0 10px;
+
+            .button {
+                background-color: #03c75a;
+                border: none;
+                height: 28px;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    background: lighten(#03c75a, 10%);
+                }
+
+                &:active{
+                    background: darken(#03c75a, 10%)
+                }
+            }
+        }
+        
+    }
+
+    .header-bottom-nav{
+        border-top: 0.5px solid lightgray ;
+        border-bottom: 0.5px solid lightgray ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+
+        .bottom-nav .txt{
+            color: naver_color(#03c75a, 0.8 );
+            font-weight: bold;
+            display: inline-block;
+            padding: 0 5px;
+        }
+
+        .bottom-nav1 .txt{
+            display: inline-block;
+            padding: 0 5px;
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+
+#container{
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+
+    .article{
+        width: 850px;
+        padding:0 20px;
+
+        .ad{
+            border: 1px solid lightgray;
+            height: 140px;
+        }
+
+        .newsline{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 40px;
+        }
+        .newsstand{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 40px;
+        }
+
+        .news{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 300px;
+        }
+
+        .somethingtoread{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 40px;
+        }
+
+        .navbar{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 40px;
+            p{
+                @include ellipsis();
+            }
+        }
+
+        .navcontents{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 120px;
+        }
+    }
+
+    .aside{
+        width: 270px;
+        padding: 0 20px;
+
+        .login{
+            position: relative;
+            border: 1px solid lightgray;
+            background-color: rgb(224, 221, 221);
+            height: 140px;
+
+            .logininfo{
+               
+                margin-top: 10px;
+                margin-left: 18px;
+
+                .infocontent{
+                    font-size: 10.7px;
+                    color: rgb(129, 127, 127);
+                }
+            }
+
+            .loginbtn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+
+                .dologin{
+                    margin-top: 10px;
+                    height: 50px;
+                    width: 240px;
+                    color: white;
+                    background-color: #03c75a;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+
+            .bottombtnclass{
+                display:flex;
+                height: 40px;
+                margin-left: 18px;
+
+
+                .findlogininfo{
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-basis: 75%;
+                    .txt{
+                        font-size: 5px;
+                        color: rgb(129, 127, 127);
+                        display: inline-block;
+                    }
+                }
+
+                .joinbtn{
+
+                    .txt{
+                        font-size: 5px;
+                        color: rgb(129, 127, 127);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .information{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 40px;
+        }
+
+        .asidead{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 180px;
+        }
+
+        .shoppingcategory{
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            height: 80px;
+        }
+    }
+}
+
+
+#footer{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .footerContents {
+        padding:0 20px;
+
+        .footerinformation{
+            border: 1px solid lightgray;
+            height: 100px;
+
+            ul{
+                display: flex;
+                list-style: none;
+              }
+              
+              li + li {
+                &::before{
+                  content: '|';
+                  margin: 0 8px;
+                  color: #ddd;
+                }
+              }
+        }
+    }
+}

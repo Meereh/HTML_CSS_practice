@@ -1,0 +1,291 @@
+#header {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#header .header-top-nav {
+  height: 140px;
+}
+
+#header .service-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 30px;
+}
+
+#header .service-area .txt {
+  padding: 0 5px;
+  display: inline-block;
+  font-size: small;
+  color: #000;
+}
+
+#header .search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#header .search-area .logo {
+  padding: 0 20px 0 0;
+}
+
+#header .search-area .logo .txt {
+  display: inline-block;
+  color: #03c75a;
+}
+
+#header .search-area .search {
+  line-height: 23px;
+  width: 300px;
+}
+
+#header .search-area .searchbtn {
+  padding: 0 10px;
+}
+
+#header .search-area .searchbtn .button {
+  background-color: #03c75a;
+  border: none;
+  height: 28px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#header .search-area .searchbtn .button:hover {
+  background: #04f971;
+}
+
+#header .search-area .searchbtn .button:active {
+  background: #029543;
+}
+
+#header .header-bottom-nav {
+  border-top: 0.5px solid lightgray;
+  border-bottom: 0.5px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+}
+
+#header .header-bottom-nav .bottom-nav .txt {
+  color: rgba(3, 199, 90, 0.8);
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+#header .header-bottom-nav .bottom-nav1 .txt {
+  display: inline-block;
+  padding: 0 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+#container {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+#container .article {
+  width: 850px;
+  padding: 0 20px;
+}
+
+#container .article .ad {
+  border: 1px solid lightgray;
+  height: 140px;
+}
+
+#container .article .newsline {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 40px;
+}
+
+#container .article .newsstand {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 40px;
+}
+
+#container .article .news {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 300px;
+}
+
+#container .article .somethingtoread {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 40px;
+}
+
+#container .article .navbar {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 40px;
+}
+
+#container .article .navbar p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+#container .article .navcontents {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 120px;
+}
+
+#container .aside {
+  width: 270px;
+  padding: 0 20px;
+}
+
+#container .aside .login {
+  position: relative;
+  border: 1px solid lightgray;
+  background-color: #e0dddd;
+  height: 140px;
+}
+
+#container .aside .login .logininfo {
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+#container .aside .login .logininfo .infocontent {
+  font-size: 10.7px;
+  color: #817f7f;
+}
+
+#container .aside .login .loginbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+#container .aside .login .loginbtn .dologin {
+  margin-top: 10px;
+  height: 50px;
+  width: 240px;
+  color: white;
+  background-color: #03c75a;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#container .aside .login .bottombtnclass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  margin-left: 18px;
+}
+
+#container .aside .login .bottombtnclass .findlogininfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+#container .aside .login .bottombtnclass .findlogininfo .txt {
+  font-size: 5px;
+  color: #817f7f;
+  display: inline-block;
+}
+
+#container .aside .login .bottombtnclass .joinbtn .txt {
+  font-size: 5px;
+  color: #817f7f;
+  display: inline-block;
+}
+
+#container .aside .information {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 40px;
+}
+
+#container .aside .asidead {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 180px;
+}
+
+#container .aside .shoppingcategory {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  height: 80px;
+}
+
+#footer {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#footer .footerContents {
+  padding: 0 20px;
+}
+
+#footer .footerContents .footerinformation {
+  border: 1px solid lightgray;
+  height: 100px;
+}
+
+#footer .footerContents .footerinformation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#footer .footerContents .footerinformation li + li::before {
+  content: '|';
+  margin: 0 8px;
+  color: #ddd;
+}
